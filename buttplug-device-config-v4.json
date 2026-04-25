@@ -1,7 +1,7 @@
 {
   "version": {
     "major": 4,
-    "minor": 189
+    "minor": 197
   },
   "protocols": {
     "activejoy": {
@@ -4832,7 +4832,9 @@
               "HPB-391",
               "HPB-472",
               "HPB-393",
-              "HBP-JXT001"
+              "HBP-JXT001",
+              "HPB-376",
+              "AP-22-892"
             ],
             "services": {
               "0000180f-0000-1000-8000-00805f9b34fb": {
@@ -5245,6 +5247,58 @@
         {
           "features": [
             {
+              "id": "1da7d7ef-b0b9-43d7-a717-4543b49eee05",
+              "index": 0,
+              "output": {
+                "oscillate": {
+                  "value": [
+                    0,
+                    100
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Tongue Motion",
+              "id": "3f574d81-b96b-4838-b7a4-3203b2c1afc8",
+              "index": 1,
+              "output": {
+                "rotate": {
+                  "value": [
+                    0,
+                    100
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Battery Level",
+              "id": "fe4d12d4-195e-44d7-aa79-353f1bd153dc",
+              "index": 2,
+              "input": {
+                "battery": {
+                  "command": [
+                    "Read"
+                  ],
+                  "value": [
+                    [
+                      0,
+                      100
+                    ]
+                  ]
+                }
+              }
+            }
+          ],
+          "id": "5b27250b-2370-4014-85a1-ef59287a8ea9",
+          "identifier": [
+            "HPB-376"
+          ],
+          "name": "Honey Play Box Joi Thrust"
+        },
+        {
+          "features": [
+            {
               "id": "ef04a42e-89a3-4a2b-95c3-545d17d35c37",
               "index": 0,
               "output": {
@@ -5447,6 +5501,57 @@
             "HPB-472"
           ],
           "name": "Honey Play Box Melody"
+        },
+        {
+          "features": [
+            {
+              "id": "38974501-922d-415e-a36d-dc35bd9f8983",
+              "index": 0,
+              "output": {
+                "vibrate": {
+                  "value": [
+                    0,
+                    100
+                  ]
+                }
+              }
+            },
+            {
+              "id": "af19930b-5a3f-4cc3-9c65-9296a295a53f",
+              "index": 1,
+              "output": {
+                "oscillate": {
+                  "value": [
+                    0,
+                    100
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Battery Level",
+              "id": "1dd5a5f3-304c-4dcb-b076-980e58953873",
+              "index": 2,
+              "input": {
+                "battery": {
+                  "command": [
+                    "Read"
+                  ],
+                  "value": [
+                    [
+                      0,
+                      100
+                    ]
+                  ]
+                }
+              }
+            }
+          ],
+          "id": "ed3da58c-bf63-470b-9ebc-3b5be93c6ca2",
+          "identifier": [
+            "AP-22-892"
+          ],
+          "name": "Honey Play Box Ryder"
         }
       ],
       "defaults": {
@@ -5780,6 +5885,7 @@
               "J-ROSELLA3",
               "J-Mackay",
               "J-Rowdy3",
+              "J-Rowdy",
               "J-Eclipse",
               "J-DukeDazzle2",
               "J-Scarlett",
@@ -6015,6 +6121,13 @@
             "J-Rowdy3"
           ],
           "name": "JoyHub Rowdy 3"
+        },
+        {
+          "id": "0d698855-a0d6-4ee8-80fb-4861cea0c8f4",
+          "identifier": [
+            "J-Rowdy"
+          ],
+          "name": "JoyHub Rowdy"
         },
         {
           "id": "26bab7e2-0a38-4790-bdf0-8d9e1927106a",
@@ -11288,8 +11401,7 @@
             "names": [
               "F1SV2A",
               "F1SV2X",
-              "F1SV3",
-              "F2"
+              "F1SV3"
             ],
             "services": {
               "0000fff0-0000-1000-8000-00805f9b34fb": {
@@ -11318,13 +11430,6 @@
             "F1SV3"
           ],
           "name": "Lelo F1s V3"
-        },
-        {
-          "id": "5126b376-fc82-4677-bfc0-c45738549b9d",
-          "identifier": [
-            "F2"
-          ],
-          "name": "Lelo F2S"
         }
       ],
       "defaults": {
@@ -11367,11 +11472,16 @@
               "Ida Wave",
               "TianiHarmony",
               "Tiani Harmony",
+              "Tiani Twist",
               "TOR3",
               "Hugo2",
               "DoubleSonic",
               "GIGI3",
-              "LIV3"
+              "LIV3",
+              "SONA3 Cruise",
+              "Switch",
+              "SURFER2",
+              "F2"
             ],
             "services": {
               "0000fff0-0000-1000-8000-00805f9b34fb": {
@@ -11520,6 +11630,135 @@
             "LIV3"
           ],
           "name": "Lelo Liv 3"
+        },
+        {
+          "features": [
+            {
+              "id": "ae6da200-6f51-446c-bda7-c0fb733b000a",
+              "index": 0,
+              "output": {
+                "vibrate": {
+                  "value": [
+                    0,
+                    100
+                  ]
+                }
+              }
+            }
+          ],
+          "id": "9d143dc1-654b-4363-bbc8-633210752e6e",
+          "identifier": [
+            "SONA3 Cruise"
+          ],
+          "name": "Lelo Sona 3 Cruise"
+        },
+        {
+          "features": [
+            {
+              "id": "111e5f86-8937-45da-b311-bc254db23d79",
+              "index": 0,
+              "output": {
+                "vibrate": {
+                  "value": [
+                    0,
+                    100
+                  ]
+                }
+              }
+            },
+            {
+              "id": "aba790a5-43bd-4826-8fd3-731d71e95e48",
+              "index": 1,
+              "output": {
+                "vibrate": {
+                  "value": [
+                    0,
+                    100
+                  ]
+                }
+              }
+            }
+          ],
+          "id": "7f5680f0-e5e2-49f2-b265-db7aad110526",
+          "identifier": [
+            "Switch"
+          ],
+          "name": "Lelo Switch"
+        },
+        {
+          "features": [
+            {
+              "id": "3a91ca14-ff70-49e8-8319-18406f50b16d",
+              "index": 0,
+              "output": {
+                "vibrate": {
+                  "value": [
+                    0,
+                    100
+                  ]
+                }
+              }
+            },
+            {
+              "id": "a43b13c0-9ebf-46f2-ab74-2dd6f8772842",
+              "index": 1,
+              "output": {
+                "vibrate": {
+                  "value": [
+                    0,
+                    100
+                  ]
+                }
+              }
+            }
+          ],
+          "id": "d8f3c009-6712-4a2e-98f6-a75170fa4112",
+          "identifier": [
+            "F2"
+          ],
+          "name": "Lelo F2S"
+        },
+        {
+          "features": [
+            {
+              "id": "ea48d476-6d05-475b-bb0e-6bff3952ccaa",
+              "index": 0,
+              "output": {
+                "vibrate": {
+                  "value": [
+                    0,
+                    100
+                  ]
+                }
+              }
+            }
+          ],
+          "id": "d8cf8c64-863c-4080-8dd5-98255eca9a7c",
+          "identifier": [
+            "Tiani Twist"
+          ],
+          "name": "Lelo Tiani Twist"
+        },
+        {
+          "features": [
+            {
+              "id": "f9d5ea43-e233-4b7e-8348-7ff95439e7a9",
+              "index": 0,
+              "output": {
+                "vibrate": {
+                  "value": [
+                    0,
+                    100
+                  ]
+                }
+              }
+            }
+          ],
+          "id": "2add7033-66ad-4c69-a63d-8a35b012e958",
+          "identifier": [
+            "SURFER2"
+          ],
+          "name": "Lelo Surfer 2"
         }
       ],
       "defaults": {
@@ -12305,6 +12544,10 @@
                 "rx": "43410003-0023-4bd4-bbd5-a6920e4c5653",
                 "tx": "43410002-0023-4bd4-bbd5-a6920e4c5653"
               },
+              "43420001-0023-4bd4-bbd5-a6920e4c5653": {
+                "rx": "43420003-0023-4bd4-bbd5-a6920e4c5653",
+                "tx": "43420002-0023-4bd4-bbd5-a6920e4c5653"
+              },
               "45410001-0023-4bd4-bbd5-a6920e4c5653": {
                 "rx": "45410003-0023-4bd4-bbd5-a6920e4c5653",
                 "tx": "45410002-0023-4bd4-bbd5-a6920e4c5653"
@@ -12428,6 +12671,10 @@
               "5a300001-0024-4bd4-bbd5-a6920e4c5653": {
                 "rx": "5a300003-0024-4bd4-bbd5-a6920e4c5653",
                 "tx": "5a300002-0024-4bd4-bbd5-a6920e4c5653"
+              },
+              "5a410001-0023-4bd4-bbd5-a6920e4c5653": {
+                "rx": "5a410003-0023-4bd4-bbd5-a6920e4c5653",
+                "tx": "5a410002-0023-4bd4-bbd5-a6920e4c5653"
               },
               "6e400001-b5a3-f393-e0a9-e50e24dcca9e": {
                 "rx": "6e400003-b5a3-f393-e0a9-e50e24dcca9e",
@@ -12595,6 +12842,57 @@
           "name": "Lovense Nora"
         },
         {
+          "features": [
+            {
+              "id": "62061a3a-aad2-4509-9a6f-755b4bdf0acc",
+              "index": 0,
+              "output": {
+                "vibrate": {
+                  "value": [
+                    0,
+                    20
+                  ]
+                }
+              }
+            },
+            {
+              "id": "5085f9a9-df8b-4dbc-ae10-5ac53c8a626d",
+              "index": 1,
+              "output": {
+                "rotate": {
+                  "value": [
+                    -20,
+                    20
+                  ]
+                }
+              }
+            },
+            {
+              "description": "battery Level",
+              "id": "f15587c9-7a1a-41e1-8c99-7f592feaf4ed",
+              "index": 2,
+              "input": {
+                "battery": {
+                  "command": [
+                    "Read"
+                  ],
+                  "value": [
+                    [
+                      0,
+                      100
+                    ]
+                  ]
+                }
+              }
+            }
+          ],
+          "id": "dffa9fe4-51ac-404b-b0f8-f74377f81f85",
+          "identifier": [
+            "CB"
+          ],
+          "name": "Lovense Velvo"
+        },
+        {
           "id": "7053fde9-0902-4aab-926d-fc51869f6ccc",
           "identifier": [
             "L"
@@ -12621,6 +12919,13 @@
             "Z"
           ],
           "name": "Lovense Hush"
+        },
+        {
+          "id": "abe83a3e-9b52-48b5-bf08-b45fd5f3e73a",
+          "identifier": [
+            "ZA"
+          ],
+          "name": "Lovense Synth"
         },
         {
           "id": "e788f8d5-037a-4ce4-a13f-6b2e8ec31fb6",
